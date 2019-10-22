@@ -2,7 +2,9 @@ import React from 'react'
 
 function Introduce() {
     return (
-        <div></div>
+        <div>
+            <img src="" alt="" srcset=""/>
+        </div>
     )
 }
 
