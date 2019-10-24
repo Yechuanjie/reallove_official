@@ -17,18 +17,22 @@ body,
   // top: 0;
   // left: 0;
   // bottom: 0;
+  background-color: rgba(193, 50, 61, 1);
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  // overflow: hidden;
+  img {
+    width: 100%;
+  }
 
-  background: url('http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E5%AE%98%E7%BD%91@3x.png') center no-repeat;
-  background-size: 100% 100%;
+  // background: url('http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E5%AE%98%E7%BD%91@3x.png') center no-repeat;
+  // background-size: 100% 100%;
 }
 
 @media screen and (min-height: 750px) {
   .mobile-page {
-    background: url('http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E7%89%88@XMAX.png') center no-repeat;
-    background-size: 100% 100%;
+    // background: url('http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E7%89%88@XMAX.png') center no-repeat;
+    // background-size: 100% 100%;
   }
 }
 

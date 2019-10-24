@@ -141,7 +141,22 @@ function Index() {
           </div>
         </div>
       )}
-      {!isPC() && <div className="mobile-page"></div>}
+      {!isPC() && (
+        <div className="mobile-page">
+          {window.innerHeight < 800 && (
+            <img
+              src="http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E5%AE%98%E7%BD%91@3x.png"
+              alt=""
+            />
+          )}
+          {window.innerHeight >= 800 && (
+            <img
+              src="http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E7%89%88@XMAX.png"
+              alt=""
+            />
+          )}
+        </div>
+      )}
     </div>
   );
 }
