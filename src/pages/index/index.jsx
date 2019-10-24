@@ -6,7 +6,6 @@ import musicOn from '../../assets/sound-on.png';
 import musicOff from '../../assets/sound-off.png';
 import commingIcon from '../../assets/comming.png';
 import wechatIcon from '../../assets/wechat-icon.jpg';
-import mobileImage from '../../assets/mobile.png';
 
 function Index() {
   const [muted, setMuted] = useState(true);
@@ -79,7 +78,7 @@ function Index() {
               muted={muted}
               loop="loop"
               autoPlay="autoplay"
-              src="//pzpsn4agr.bkt.clouddn.com/%E7%9C%9F%E7%88%B1%E5%AE%9DPC%E5%AE%98%E7%BD%91%E8%A7%86%E9%A2%91.mp4"
+              src="http://pzpsn4agr.bkt.clouddn.com/%E7%9C%9F%E7%88%B1%E5%AE%9DPC%E5%AE%98%E7%BD%91%E8%A7%86%E9%A2%91.mp4"
               className="video"
             >
               抱歉，您的浏览器不支持内嵌视频
@@ -135,11 +134,7 @@ function Index() {
           </div>
         </div>
       )}
-      {!isPC() && (
-        <div className="mobile-page">
-          <img src={mobileImage} alt="" className="mobile-image" />
-        </div>
-      )}
+      {!isPC() && <div className="mobile-page"></div>}
     </div>
   );
 }
