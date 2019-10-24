@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import './App.scss';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router>
       <Switch>
         <Route exact path="/" component={Index}></Route>
         <Route path="/introduce" component={Introduce}></Route>
