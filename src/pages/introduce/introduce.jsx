@@ -6,9 +6,6 @@ import './introduce.scss';
 //   /^\d.\/.*\.png$/,
 // );
 // const images = requireContext.keys().map(requireContext);
-
-// 所有的表情包对象
-
 const imageList = () => {
     const images = [];
     for (let i = 0; i <= 10; i++) {
