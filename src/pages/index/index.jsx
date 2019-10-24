@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 import './index.scss'
@@ -56,7 +56,7 @@ function Index() {
             </div>
             <div className="content-section">
                 <div className="head-section">
-                    <img src={muted ? musicOff : musicOn} className="music-icon" onClick={togglePlay} />
+                    <img src={muted ? musicOff : musicOn} alt="" className="music-icon" onClick={togglePlay} />
                     {/* <Link className="introduce">平台介绍 ></div>
                     <Link className="introduce">平台介绍 ></div> */}
                     <Link className="introduce" to="/introduce">平台介绍 ></Link>
@@ -65,7 +65,7 @@ function Index() {
                     <div className="info-title">真爱宝，</div>
                     <div className="info-title">让世界多一点真爱</div>
                     <div className="icon-section">
-                        <img src={appIcon} className="app-icon" />
+                        <img src={appIcon} alt="" className="app-icon" />
                         <div className="app-type">
                             {/* <div className={`type ${defaultActive}`} onMouseOver={() => mouseOver(0)}>微信</div>
                             <div className="type" onMouseOut={mouseOut} onMouseOver={() => mouseOver(1)}>QQ</div>
