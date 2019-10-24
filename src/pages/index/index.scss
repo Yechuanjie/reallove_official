@@ -3,29 +3,32 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
+
 .official-page {
-  position: relative;
+  // position: relative;
   width: 100%;
   height: 100%;
+  // overflow: hidden;
 }
+
 .mobile-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
-  background: url('../../assets/mobile_3x.png') center no-repeat;
-  background-size: cover;
+  background: url('../../assets/mobile.png') center no-repeat;
+  background-size: 100% 100%;
+}
 
-  @media screen and (min-height: 750px) {
-    .mobile-page {
-      background: url('../../assets/mobile_ipx.png') center no-repeat;
-      background-size: cover;
-    }
+@media screen and (min-height: 750px) {
+  .mobile-page {
+    background: url('../../assets/mobile_ipx.png') center no-repeat;
+    background-size: 100% 100%;
   }
 }
 
@@ -60,15 +63,15 @@ body,
     height: 100px;
 
     .music-icon {
-      width: 14px;
-      height: 14px;
-      margin-right: 13px;
+      width: 18px;
+      height: 18px;
+      margin-right: 23px;
       cursor: pointer;
     }
 
     .introduce {
       margin-right: 119px;
-      font-size: 12px;
+      font-size: 18px;
       font-weight: bold;
       color: rgba(255, 255, 255, 1);
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
@@ -78,23 +81,58 @@ body,
 
   .info-section {
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 10%;
 
     .info-title {
-      font-size: 28px;
+      font-size: 50px;
+      font-family: PingFang SC;
       font-weight: 500;
+      margin-bottom: 10px;
       color: rgba(255, 255, 255, 1);
-      text-shadow: 0px 3px 11px rgba(0, 0, 0, 0.5);
+      text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     }
 
     .icon-section {
-      margin-top: 13px;
+      margin-top: 26px;
       display: flex;
-      align-items: center;
+      // align-items: center;
+
+      .app-icon-section {
+        display: flex;
+        flex-direction: column;
+
+        .app-tip {
+          width: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 17px;
+          margin-top: 6px;
+        }
+
+        .app-tip-line {
+          width: 40px;
+          height: 1px;
+          background: linear-gradient(270deg, rgba(193, 50, 61, 0) 0%, rgba(230, 230, 230, 1) 100%);
+          margin-top: 2px;
+          &.left {
+            transform: rotate(180deg);
+          }
+        }
+
+        .app-tip-txt {
+          font-size: 12px;
+          font-family: PingFang SC;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 1);
+          opacity: 0.6;
+          margin: 0 4px;
+        }
+      }
 
       .app-icon {
-        width: 113px;
-        height: 113px;
+        width: 160px;
+        height: 160px;
         background: rgba(255, 255, 255, 1);
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
@@ -102,19 +140,26 @@ body,
       }
 
       .app-type {
-        width: 113px;
-        height: 113px;
+        width: 160px;
+        height: 160px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         .type {
-          width: 113px;
-          height: 26px;
-          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-          border-radius: 13px;
+          // width: 200px;
+          // height: 46px;
+          // background: rgba(255, 255, 255, 1);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
+          border-radius: 22px 23px 23px 22px;
+
+          width: 143px;
+          height: 40px;
+          line-height: 40px;
+          // box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+          // border-radius: 13px;
           text-align: center;
-          font-size: 17px;
+          font-size: 18px;
           font-weight: 500;
           background: rgba(255, 255, 255, 0.3);
           color: #ffffff;
@@ -131,7 +176,7 @@ body,
   }
 
   .copyright-section {
-    font-size: 13px;
+    font-size: 14px;
     color: #ffffff;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);

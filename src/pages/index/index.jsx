@@ -102,7 +102,14 @@ function Index() {
               <div className="info-title">真爱宝，</div>
               <div className="info-title">让世界多一点真爱</div>
               <div className="icon-section">
-                <img src={appIcon} alt="" className="app-icon" />
+                <div className="app-icon-section">
+                  <img src={appIcon} alt="" className="app-icon" />
+                  <div className="app-tip">
+                    <div className="app-tip-line left"></div>
+                    <div className="app-tip-txt">扫码即可使用</div>
+                    <div className="app-tip-line"></div>
+                  </div>
+                </div>
                 <div className="app-type">
                   {/* <div className={`type ${defaultActive}`} onMouseOver={() => mouseOver(0)}>微信</div>
                             <div className="type" onMouseOut={mouseOut} onMouseOver={() => mouseOver(1)}>QQ</div>
