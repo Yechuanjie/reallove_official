@@ -21,13 +21,13 @@ body,
   height: 100%;
   overflow: hidden;
 
-  background: url('../../assets/mobile.png') center no-repeat;
+  background: url('http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E5%AE%98%E7%BD%91@3x.png') center no-repeat;
   background-size: 100% 100%;
 }
 
 @media screen and (min-height: 750px) {
   .mobile-page {
-    background: url('../../assets/mobile_ipx.png') center no-repeat;
+    background: url('http://pzpsn4agr.bkt.clouddn.com/%E6%89%8B%E6%9C%BA%E7%89%88@XMAX.png') center no-repeat;
     background-size: 100% 100%;
   }
 }
@@ -135,6 +135,7 @@ body,
         width: 160px;
         height: 160px;
         background: rgba(255, 255, 255, 1);
+        padding: 10px;
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         margin-right: 40px;
