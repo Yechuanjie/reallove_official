@@ -13,7 +13,7 @@ import './App.scss';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
       <Switch>
         <Route exact path="/" component={Index}></Route>
         <Route path="/introduce" component={Introduce}></Route>

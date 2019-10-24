@@ -3,10 +3,7 @@ import './introduce.scss'
 const requireContext = require.context("../../assets/introduce", true, /^\.\/.*\.png$/);
 const images = requireContext.keys().map(requireContext);
 
-console.info(images)
-
 function Introduce() {
-
     return (
         <div className="introduce-page">
             {
